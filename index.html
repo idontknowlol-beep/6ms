@@ -111,6 +111,13 @@
 <audio id="music" src="song/SIMMBA_ Tere Bin  Ranveer Singh, Sara Ali Khan  Tanishk Bagchi, Rahat Fateh Ali Khan, Asees Kaur.mp3" autoplay loop></audio>
 
 <script>
+  document.body.addEventListener('click', () => {
+    const music = document.getElementById('music');
+    music.play();
+  });
+</script>
+
+<script>
   // Accurate timer
   function updateTimer() {
     const startDate = new Date(2024, 10, 29); // Months are 0-indexed: 10=November
